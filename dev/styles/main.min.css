@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  color: #fff;
+}
+
+body {
+  background-color: #846d4d;
+}
+
+header {
+  padding: 16px;
+  background-color: #6c5637;
+}
+header .container--grid {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  align-items: center;
+}
+header h1 {
+  margin: 0 auto;
+  align-self: center;
+  font-size: 3em;
+  font-family: "Kalam", cursive;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header ul li {
+  display: inline;
+  margin-right: 16px;
+}
+header a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1023px;
+  margin: 0 auto;
+}
+.container--flex {
+  display: flex;
+}
+.container--grid {
+  display: grid;
+}
+
+.container__title {
+  width: 100%;
+  justify-content: center;
+}
+.container__title--flex {
+  display: flex;
+}
+
+.main__image img {
+  width: 100%;
+}
+
+.product__about {
+  text-align: center;
+  padding: 10vh 0;
+}
+.product__about img {
+  display: block;
+  width: 30%;
+}
+.product__about_text {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.product__about_text p, .product__about_text h1 {
+  margin: 0 auto;
+  font-size: 1.5em;
+  margin-bottom: 8px;
+}
+.product__about_text h1 {
+  font-size: 2em;
+}
+
+.container__button {
+  padding: 16px 0;
+}
+.container__button button {
+  padding: 8px;
+  border: none;
+  border-radius: 9px;
+  background-color: green;
+  font-size: 2em;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.container__button button:hover {
+  scale: 1.1;
+}
+
+.product__customers {
+  padding: 10vh 0;
+  background-color: #9d8463;
+}
+.product__customers h1 {
+  margin-bottom: 32px;
+  font-size: 2.5em;
+  font-family: "Kalam", cursive;
+}
+.product__customers p {
+  font-size: 1.2em;
+}
+.product__customers .customer {
+  justify-content: center;
+  text-align: center;
+}
+.product__customers .customer img {
+  max-width: 400px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 48px;
+}
+.product__customers h1 {
+  text-align: center;
+}
+
+#assista-ao-video {
+  margin: 24px auto;
+}
+
+@media (max-width: 767px) {
+  video {
+    max-width: 300px;
+    width: 100%;
+    height: 200px;
+  }
+  img {
+    width: 100px;
+  }
+  header .container--grid {
+    grid-template-columns: 100%;
+  }
+  .product__about img {
+    height: 100px;
+    margin: auto;
+  }
+  .product__about .container--flex {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=main.min.css.map */
